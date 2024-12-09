@@ -1,4 +1,4 @@
-import { XymyxBoardState } from '@/app/types/xymyx.type'
+import { XymyxBoardState } from '@/app/types'
 import React, { useState } from 'react'
 
 interface BoardUpdaterProps {
@@ -19,7 +19,7 @@ export function BoardUpdater({ updateBoard }: BoardUpdaterProps) {
   }
 
   return (
-    <div className="mt-4 w-full max-w-md">
+    <div className="flex flex-col">
       <textarea
         className="w-full p-2 border border-gray-300 rounded font-mono"
         rows={5}
@@ -28,10 +28,10 @@ export function BoardUpdater({ updateBoard }: BoardUpdaterProps) {
         placeholder="Enter JSON here..."
       />
       <button
-        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded"
         onClick={handleUpdate}
       >
-        Update Board
+        Initial position
       </button>
     </div>
   )
