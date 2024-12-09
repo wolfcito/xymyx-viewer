@@ -1,18 +1,22 @@
 # xymyx-viewer
 
 example:
+
+Initial position
+
+```JSON
 {
 "pieces": [
-{"type": "rook", "color": "white", "position": {"row": 7, "col": 0}},
-{"type": "rook", "color": "white", "position": {"row": 7, "col": 6}},
-{"type": "bishop", "color": "white", "position": {"row": 7, "col": 2}},
-{"type": "king", "color": "white", "position": {"row": 7, "col": 4}},
-{"type": "pawn", "color": "white", "position": {"row": 5, "col": 0}},
-{"type": "pawn", "color": "white", "position": {"row": 6, "col": 1}},
-{"type": "pawn", "color": "white", "position": {"row": 6, "col": 5}},
-{"type": "pawn", "color": "white", "position": {"row": 6, "col": 7}},
-{"type": "bishop", "color": "white", "position": {"row": 3, "col": 1}},
-{"type": "queen", "color": "white", "position": {"row": 4, "col": 1}},
+    {"type": "rook", "color": "white", "position": {"row": 7, "col": 0}},
+    {"type": "rook", "color": "white", "position": {"row": 7, "col": 6}},
+    {"type": "bishop", "color": "white", "position": {"row": 7, "col": 2}},
+    {"type": "king", "color": "white", "position": {"row": 7, "col": 4}},
+    {"type": "pawn", "color": "white", "position": {"row": 5, "col": 0}},
+    {"type": "pawn", "color": "white", "position": {"row": 6, "col": 1}},
+    {"type": "pawn", "color": "white", "position": {"row": 6, "col": 5}},
+    {"type": "pawn", "color": "white", "position": {"row": 6, "col": 7}},
+    {"type": "bishop", "color": "white", "position": {"row": 3, "col": 1}},
+    {"type": "queen", "color": "white", "position": {"row": 4, "col": 1}},
 
     {"type": "rook", "color": "black", "position": {"row": 0, "col": 0}},
     {"type": "rook", "color": "black", "position": {"row": 0, "col": 7}},
@@ -29,3 +33,18 @@ example:
 
 ]
 }
+```
+
+Make movement
+
+```JSON
+{
+  "opCode": 30,
+  "origenFila": 5,
+  "origenColumna": 6,
+  "destinoFila": 3,
+  "destinoColumna": 0,
+  "totalMillisP1": 2847,
+  "player": 2
+}
+```
