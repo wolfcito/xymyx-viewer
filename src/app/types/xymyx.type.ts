@@ -9,4 +9,6 @@ export interface XymyxPiece {
 
 export interface XymyxBoardState {
   pieces: XymyxPiece[]
+  totalMillisP1?: number
+  totalMillisP2?: number
 }
